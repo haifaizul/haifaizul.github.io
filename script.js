@@ -116,7 +116,7 @@
 
     const spans = $$(".sc-ch", el);
     let frame = 0;
-    const total = 28;
+    const total = 60;
 
     (function tick() {
       const settled = Math.floor((frame / total) * chars.length);
