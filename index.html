@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faizul Hai — Philomath in Training</title>
+  <meta name="description" content="Faizul Hai — a philomath in training. A/L 2026 Mathematics student from Serendip. Mathematics, Physics, Chemistry, tech, and small tools on GitHub." />
+  <meta property="og:title" content="Faizul Hai — Philomath in Training" />
+  <meta property="og:description" content="Mathematics ✦ Physics ✦ Chemistry ✦ Tech. A/L 2026 batch, from Serendip. Philomath → Polymath." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%237C4DFF'/%3E%3Ctext x='32' y='44' font-family='Arial Black, Arial' font-size='30' font-weight='900' fill='white' text-anchor='middle'%3EFH%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== preloader ======== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <div class="pre-logo">FH</div>
+      <p class="pre-text mono">loading knowledge<span class="pre-dots">...</span></p>
+      <div class="pre-bar"><span id="pre-fill"></span></div>
+    </div>
+  </div>
+
+  <!-- ======== chrome ======== -->
+  <div id="progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="bg-dots" aria-hidden="true"></div>
+
+  <!-- floating memphis shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <svg class="shape sq-squiggle" viewBox="0 0 120 40"><path d="M0 20 Q 15 0, 30 20 T 60 20 T 90 20 T 120 20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+    <div class="shape sh-circle"></div>
+    <div class="shape sh-triangle"></div>
+    <div class="shape sh-half"></div>
+    <div class="shape sh-dots"></div>
+    <div class="shape sh-zig"></div>
+  </div>
+
+  <!-- ======== nav ======== -->
+  <header class="nav" id="top">
+    <a href="#top" class="logo magnetic" id="logo" aria-label="Back to top, and click me for confetti">
+      <span class="logo-box">FH</span>
+      <span class="logo-mono mono">faizul.hai()</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about" class="nav-link" data-cursor>about</a>
+      <a href="#fields" class="nav-link" data-cursor>fields</a>
+      <a href="#projects" class="nav-link" data-cursor>projects</a>
+      <a href="#contact" class="nav-link nav-cta" data-cursor>say hi</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ======== hero ======== -->
+    <section class="hero">
+      <div class="hero-meta mono reveal">
+        <span>EST. 2007.09.04</span><span class="sep">✦</span>
+        <span>FROM SERENDIP</span><span class="sep">✦</span>
+        <span>A/L 2026 BATCH</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="scramble" data-text="FAIZUL">FAIZUL</span>
+        <span class="scramble name-last" data-text="HAI">HAI</span>
+        <svg class="title-squiggle" viewBox="0 0 220 30" aria-hidden="true"><path d="M4 20 Q 28 2, 52 20 T 100 20 T 148 20 T 196 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        <span class="sticker sticker-birth rotate-8" aria-hidden="true">est. 2007</span>
+      </h1>
+
+      <p class="hero-sub reveal">philomath in training to become a <strong class="mark">polymath</strong> —<br />
+        currently studying <span class="wheel mono" id="wheel" aria-hidden="true">MATHEMATICS</span></p>
+
+      <div class="hero-equation reveal" aria-hidden="true">
+        <span class="eq">φ = (1 + √5) / 2</span>
+        <span class="eq-note mono">the golden ratio · math's love letter to beauty</span>
+      </div>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-magenta magnetic" data-cursor>see my work ↓</a>
+        <a href="#about" class="btn btn-cyan magnetic" data-cursor>about me</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label mono">A/L subjects</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label mono">projects shipped</span></div>
+        <div class="stat"><span class="stat-num" id="stat-age" data-count="18">0</span><span class="stat-label mono">years young</span></div>
+        <div class="stat"><span class="stat-num stat-inf">∞</span><span class="stat-label mono">curiosity</span></div>
+      </div>
+
+      <svg class="hero-wave" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path id="wave-path" d="M0 60 H1200" fill="none" stroke="#00B8F0" stroke-width="6"/>
+      </svg>
+
+      <div class="scroll-hint mono" aria-hidden="true">scroll ↓</div>
+    </section>
+
+    <!-- ======== marquees ======== -->
+    <div class="marquee marquee-cyan" aria-hidden="true">
+      <div class="marquee-track">
+        <span>MATHEMATICS ✦</span><span>PHYSICS ✦</span><span>CHEMISTRY ✦</span><span>TECH ✦</span><span>PHILOMATH → POLYMATH ✦</span><span>SERENDIP ✦</span><span>A/L 2026 ✦</span>
+        <span>MATHEMATICS ✦</span><span>PHYSICS ✦</span><span>CHEMISTRY ✦</span><span>TECH ✦</span><span>PHILOMATH → POLYMATH ✦</span><span>SERENDIP ✦</span><span>A/L 2026 ✦</span>
+      </div>
+    </div>
+
+    <div class="marquee marquee-constants mono" aria-hidden="true">
+      <div class="marquee-track reverse">
+        <span>π = 3.14159 26535 89793 23846 ✦</span>
+        <span>e = 2.71828 18284 59045 23536 ✦</span>
+        <span>φ = 1.61803 39887 49894 84820 ✦</span>
+        <span>√2 = 1.41421 35623 73095 04880 ✦</span>
+        <span>c = 299,792,458 m/s ✦</span>
+        <span>h ≈ 6.626 × 10⁻³⁴ J·s ✦</span>
+        <span>i² = −1 ✦</span>
+        <span>π = 3.14159 26535 89793 23846 ✦</span>
+        <span>e = 2.71828 18284 59045 23536 ✦</span>
+        <span>φ = 1.61803 39887 49894 84820 ✦</span>
+        <span>√2 = 1.41421 35623 73095 04880 ✦</span>
+        <span>c = 299,792,458 m/s ✦</span>
+        <span>h ≈ 6.626 × 10⁻³⁴ J·s ✦</span>
+        <span>i² = −1 ✦</span>
+      </div>
+    </div>
+
+    <!-- ======== about ======== -->
+    <section class="section" id="about">
+      <h2 class="section-title">
+        <span class="sec-num mono">01</span>
+        <span class="sec-word">THE PHILOMATH</span>
+        <svg class="sec-squiggle" viewBox="0 0 220 30" aria-hidden="true"><path d="M4 20 Q 28 2, 52 20 T 100 20 T 148 20 T 196 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+      </h2>
+
+      <div class="about-grid">
+        <div class="portrait reveal tilt">
+          <div class="portrait-block">
+            <span class="tape tape-a"></span>
+            <!-- 👇 YOUR PHOTO GOES HERE (1 line). Copy your photo into this
+                 repo's folder as "photo.jpg", then uncomment the <img> below
+                 and delete the <span class="portrait-fh">FH</span> line. -->
+            <!-- <img class="portrait-img" src="photo.jpg" alt="Faizul Hai" /> -->
+            <span class="portrait-fh">FH</span>
+            <span class="portrait-meta mono">B. 2007.09.04 · SERENDIP</span>
+          </div>
+          <svg class="portrait-squiggle" viewBox="0 0 120 40" aria-hidden="true"><path d="M0 20 Q 15 0, 30 20 T 60 20 T 90 20 T 120 20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg>
+        </div>
+
+        <div class="about-text">
+          <p class="reveal">I'm Faizul Hai — born on <strong>04.09.2007</strong> in <strong>Serendip</strong>, the old name for Sri Lanka that quietly slipped into English as the word <em>serendipity</em>. Fitting, honestly: I keep accidentally finding things worth learning.</p>
+          <p class="reveal">I'm in the <strong>A/L 2026 batch</strong>, currently studying <strong>Mathematics, Physics and Chemistry</strong> — and I treat the syllabus as a floor, not a ceiling. I'm a philomath by instinct: I collect fields the way other people collect stamps, and the long game is a slow, happy transition from philomath to <strong>polymath</strong>.</p>
+          <p class="reveal">When the textbooks close, I build. Physics simulators to watch mechanics move, small web tools, note apps, silly games — all of it published on GitHub, most of it born out of pure curiosity.</p>
+
+          <div class="fact-chips reveal">
+            <span class="chip chip-cyan mono">word: serendipity</span>
+            <span class="chip chip-lime mono">age: <span id="age-chip">…</span> days</span>
+            <span class="chip chip-violet mono">location: 7.4171°N 81.8176°E</span>
+            <span class="chip chip-magenta mono">status: philomath → polymath</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== fields ======== -->
+    <section class="section" id="fields">
+      <h2 class="section-title">
+        <span class="sec-num mono">02</span>
+        <span class="sec-word">FIELDS OF STUDY</span>
+        <svg class="sec-squiggle" viewBox="0 0 220 30" aria-hidden="true"><path d="M4 20 Q 28 2, 52 20 T 100 20 T 148 20 T 196 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+      </h2>
+
+      <div class="fields-grid">
+        <article class="field-card tilt reveal" data-tilt>
+          <div class="field-top">
+            <span class="field-symbol">∑</span>
+            <span class="field-num mono">F.01</span>
+          </div>
+          <h3>Mathematics</h3>
+          <p>Pure and applied — the art of finding the pattern under the noise.</p>
+          <ul class="field-list mono">
+            <li>algebra &amp; calculus</li>
+            <li>geometry &amp; proofs</li>
+            <li>probability &amp; stats</li>
+          </ul>
+        </article>
+
+        <article class="field-card tilt reveal" data-tilt>
+          <div class="field-top">
+            <span class="field-symbol">ψ</span>
+            <span class="field-num mono">F.02</span>
+          </div>
+          <h3>Physics</h3>
+          <p>Why the world moves the way it does — and simulators to prove it.</p>
+          <ul class="field-list mono">
+            <li>mechanics &amp; collisions</li>
+            <li>waves &amp; SHM</li>
+            <li>electricity &amp; magnetism</li>
+          </ul>
+        </article>
+
+        <article class="field-card tilt reveal" data-tilt>
+          <div class="field-top">
+            <span class="field-symbol">🧪</span>
+            <span class="field-num mono">F.03</span>
+          </div>
+          <h3>Chemistry</h3>
+          <p>Matter's gossip column — atoms, bonds and everything they get up to.</p>
+          <ul class="field-list mono">
+            <li>physical chemistry</li>
+            <li>organic &amp; inorganic</li>
+            <li>thermodynamics</li>
+          </ul>
+        </article>
+
+        <article class="field-card tilt reveal" data-tilt>
+          <div class="field-top">
+            <span class="field-symbol">&lt;/&gt;</span>
+            <span class="field-num mono">F.04</span>
+          </div>
+          <h3>Tech &amp; the rest</h3>
+          <p>Where the daydreams get shipped — small tools, web things, side quests.</p>
+          <ul class="field-list mono">
+            <li>web tinkering (HTML/CSS/JS)</li>
+            <li>note &amp; app experiments</li>
+            <li>whatever curiosity demands</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======== projects ======== -->
+    <section class="section" id="projects">
+      <h2 class="section-title">
+        <span class="sec-num mono">03</span>
+        <span class="sec-word">SHIPPED &amp; EXPERIMENTS</span>
+        <svg class="sec-squiggle" viewBox="0 0 220 30" aria-hidden="true"><path d="M4 20 Q 28 2, 52 20 T 100 20 T 148 20 T 196 20" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+      </h2>
+
+      <div class="projects-grid">
+        <article class="project-card tilt reveal c-cyan" data-tilt>
+          <div class="proj-top">
+            <span class="proj-icon">📈</span>
+            <span class="proj-tag mono">HTML · canvas · physics</span>
+          </div>
+          <h3>p6sims</h3>
+          <p>Interactive simulators for A-level physics — projectile motion, Newton's laws, energy, collisions, plus a full waves &amp; SHM section. Built to study mechanics by watching it move.</p>
+          <div class="proj-foot mono">
+            <span>~/p6sims</span>
+            <span class="proj-links">
+              <a href="/p6sims/" data-cursor>visit ↗</a>
+              <a href="https://github.com/haifaizul/p6sims" data-cursor>code ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal c-violet" data-tilt>
+          <div class="proj-top">
+            <span class="proj-icon">📝</span>
+            <span class="proj-tag mono">React · Supabase</span>
+          </div>
+          <h3>strangernotes</h3>
+          <p>A cozy corner of thoughts and experiments with randomized reading — no two visits are ever quite the same.</p>
+          <div class="proj-foot mono">
+            <span>~/strangernotes</span>
+            <span class="proj-links">
+              <a href="/strangernotes/" data-cursor>visit ↗</a>
+              <a href="https://github.com/haifaizul/strangernotes" data-cursor>code ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal c-magenta" data-tilt>
+          <div class="proj-top">
+            <span class="proj-icon">💜</span>
+            <span class="proj-tag mono">React · TypeScript · shadcn/ui</span>
+          </div>
+          <h3>kind-notes</h3>
+          <p>A wall of kindness — leave a note, print it as a card, make someone's day. Small software, big vibes.</p>
+          <div class="proj-foot mono">
+            <span>~/kind-notes</span>
+            <span class="proj-links">
+              <a href="https://github.com/haifaizul/kind-notes" data-cursor>code ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal c-lime" data-tilt>
+          <div class="proj-top">
+            <span class="proj-icon">🔥</span>
+            <span class="proj-tag mono">HTML · JS</span>
+          </div>
+          <h3>FLAMES</h3>
+          <p>The nostalgic name-game every Sri Lankan kid grew up with, rebuilt with a modern touch. Go on — test your crush.</p>
+          <div class="proj-foot mono">
+            <span>~/FLAMES</span>
+            <span class="proj-links">
+              <a href="/FLAMES/" data-cursor>visit ↗</a>
+              <a href="https://github.com/haifaizul/FLAMES" data-cursor>code ↗</a>
+            </span>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal c-white" data-tilt>
+          <div class="proj-top">
+            <span class="proj-icon">🔤</span>
+            <span class="proj-tag mono">HTML · JS</span>
+          </div>
+          <h3>InterText</h3>
+          <p>A playful text tool for bending written language into new shapes. Words are toys; he plays.</p>
+          <div class="proj-foot mono">
+            <span>~/InterText</span>
+            <span class="proj-links">
+              <a href="/InterText/" data-cursor>visit ↗</a>
+              <a href="https://github.com/haifaizul/InterText" data-cursor>code ↗</a>
+            </span>
+          </div>
+        </article>
+      </div>
+
+      <p class="projects-more reveal">
+        more experiments brewing on
+        <a href="https://github.com/haifaizul" class="mark-underline" data-cursor>github.com/haifaizul</a> →
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ======== contact ======== -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="sec-num mono">04</span>
+      <h2 class="contact-title reveal">LET'S BUILD<br /><span class="mark">SOMETHING</span></h2>
+      <p class="contact-sub reveal">An idea, a question, or just want to talk math?<br />The inbox is open — so is my GitHub.</p>
+      <div class="contact-btns reveal">
+        <a href="https://github.com/haifaizul" class="btn btn-white magnetic" data-cursor>github ↗</a>
+        <a href="https://www.linkedin.com/in/faizul-hai" class="btn btn-cyan magnetic" data-cursor>linkedin ↗</a>
+        <a href="https://instagram.com/hai_faizul" class="btn btn-violet magnetic" data-cursor>instagram ↗</a>
+      </div>
+      <p class="contact-coords mono reveal">7.4171° N, 81.8176° E — KALMUNAI, SERENDIP</p>
+
+      <div class="marquee marquee-lime contact-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>OPEN TO IDEAS ✦</span><span>OPEN TO COLLABS ✦</span><span>LET'S BUILD ✦</span><span>STAY CURIOUS ✦</span>
+          <span>OPEN TO IDEAS ✦</span><span>OPEN TO COLLABS ✦</span><span>LET'S BUILD ✦</span><span>STAY CURIOUS ✦</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mono">
+    <span>© 2026 FAIZUL HAI — BUILT WITH &lt;3 + AN AI AGENT IN SERENDIP</span>
+    <button id="to-top" class="to-top magnetic" aria-label="Back to top" data-cursor>↑ top</button>
+  </footer>
+
+  <script src="script.js"></script>
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      #preloader { display: none; }
+    </style>
+  </noscript>
+</body>
+</html>
